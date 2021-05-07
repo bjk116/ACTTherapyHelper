@@ -24,4 +24,6 @@ class Thought(models.Model):
 
     def __str__(self):
         dt = self.create_date.strftime("%Y-%m-%d %H:%M")
-        return f"{dt}: {self.thought_text[:100]}"
+        thought = f"{self.thought_text[:100]}..."
+        # TODO: figure out way to display first couple of thought categories selected
+        return f"{dt}: {thought}"
