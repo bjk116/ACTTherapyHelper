@@ -4,16 +4,24 @@ ACT Therapy Helper Application, for recording thoughts and detecting trends
 # To Do
 ## Views
 Login page
+
 Thought logger for logging problematic thoughts, and what was associated with them
+
 Activity Creator
+
 If problmatic - walk through page
+
 Trends view - emotions per day/week/month
+
 End of day review
+
 Morning preview?
 
 ## Models
 Problably want to allow user to select time of thought, but auto pick now
+
 Daily to do list and what times - routines
+
 One off to do list - errands/one shots
 
 ## Big picture\User Story
