@@ -1,0 +1,19 @@
+{% if upcoming_errands %}
+    <ul>
+    {% for errand in upcoming_errands %}
+        <li>{{ errand.errand_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>All errands done!</p>
+{% endif %}
+
+{% if recent_thoughts %}
+    <ul>
+    {% for thought in recent_thoughts %}
+        <li>{{ thought.thought_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No thoughts recorded yet.  Why don't you add one now?</p>
+{% endif %}
