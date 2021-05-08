@@ -24,6 +24,8 @@ Daily to do list and what times - routines
 
 One off to do list - errands/one shots
 
+Way to select what days to repeat a routine for - many to many to weekday field
+
 ## Big picture\User Story
 User wakes up, gets a notification that its time for their
 morning routine.  Click notification, log thoughts, if problematic walk through, and 30 minutes  later check that
