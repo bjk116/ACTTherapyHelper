@@ -1,7 +1,7 @@
 {% if upcoming_errands %}
     <ul>
     {% for errand in upcoming_errands %}
-        <li>{{ errand.errand_text }}</li>
+        <li><a href="{% url 'thoughtlogger:edit_errand' errand.id %}">{{ errand.errand_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
