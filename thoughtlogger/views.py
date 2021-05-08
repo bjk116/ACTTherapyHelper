@@ -18,11 +18,11 @@ def add_errand(request):
     """
     pass
 
-def edit_errand(request):
+def edit_errand(request, errand_id):
     """
     Edit errand
     """
-    pass
+    return HttpResponse(f"Going to edit errand id {errand_id}")
 
 def delete_errand(request):
     """
