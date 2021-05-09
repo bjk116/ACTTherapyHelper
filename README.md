@@ -3,7 +3,7 @@ ACT Therapy Helper Application, for recording thoughts and detecting trends
 
 # To Do
 ## Views
-Login page
+Login page - Gmail login
 
 Thought logger for logging problematic thoughts, and what was associated with them
 
