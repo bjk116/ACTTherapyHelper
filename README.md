@@ -2,6 +2,16 @@
 ACT Therapy Helper Application, for recording thoughts and detecting trends
 
 # To Do
+## Next in line
+1)  Make a base template with header/footer
+2)  Make two index pages, one for logged in, one for not
+3)  Add/Edit Errands
+4)  Integrate gmail login
+5)  Figoure how to push notifications to users who accept it
+6)  Integrate celery to run background tasks
+7)  Tie together making an errand and then creating a background task via celery
+
+
 ## Views
 Login page - Gmail login
 
