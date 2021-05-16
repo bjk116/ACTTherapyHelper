@@ -1,19 +1,23 @@
-{% if upcoming_errands %}
-    <ul>
-    {% for errand in upcoming_errands %}
-        <li><a href="{% url 'thoughtlogger:edit_errand' errand.id %}">{{ errand.errand_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>All errands done!</p>
-{% endif %}
+{% extends 'base.html' %}
 
-{% if recent_thoughts %}
-    <ul>
-    {% for thought in recent_thoughts %}
-        <li>{{ thought.thought_text }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No thoughts recorded yet.  Why don't you add one now?</p>
-{% endif %}
+{% block content %}
+    {% if upcoming_errands %}
+        <ul>
+        {% for errand in upcoming_errands %}
+            <li><a href="{% url 'thoughtlogger:edit_errand' errand.id %}">{{ errand.errand_text }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>All errands done!</p>
+    {% endif %}
+
+    {% if recent_thoughts %}
+        <ul>
+        {% for thought in recent_thoughts %}
+            <li>{{ thought.thought_text }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No thoughts recorded yet.  Why don't you add one now?</p>
+    {% endif %}
+{% endblock %}
